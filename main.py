@@ -1,3 +1,4 @@
+#Clase Principal, esta es la clase que se ejecutara en el ide
 from turtle import Screen
 from snake import Snake
 from food import Food
