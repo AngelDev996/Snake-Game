@@ -14,21 +14,24 @@ class Snake:
         self.segmentos = []
         self.crear_serpiente()
         self.cabeza = self.segmentos[0]
-
+    #Funcion que crea la serpiente principal (Se crea con tres segmentos)
     def crear_serpiente(self):
         for posicion in POSICIONES_PRINCIPALES:
             self.anadir_segmento(posicion)
-
+            
+    #Funcion que añade mas segmentos 
     def anadir_segmento(self, posicion):
         square = Turtle("square")
         square.color("white")
         square.penup()
         square.goto(posicion)
         self.segmentos.append(square)
-
+    
+    #Funcion que extiende a la serpiente
     def extender_serpiente(self):
         self.anadir_segmento(self.segmentos[-1].position())
-
+    
+    #Funcion que mueve la serpiente de manera contstante
     def mover_serpiente(self):
         for n in range(len(self.segmentos) - 1, 0, -1):
             nueva_coor_x = self.segmentos[n - 1].xcor()
@@ -36,6 +39,7 @@ class Snake:
             self.segmentos[n].goto(nueva_coor_x, nueva_coor_y)
         self.cabeza.forward(DISTANCIA_DE_MOVIMIENTO)
 
+    #Mapeo de las teclas arriba, abajo, izquierda, derecha, para controlar la serpiente
     def up(self):
         if self.cabeza.heading() != DOWN:
             self.cabeza.setheading(UP)
