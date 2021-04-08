@@ -1,5 +1,4 @@
 # Snake-Game
-Juego de la serpiente escrito en Python, con la libreria de Turtle Graphics
-Libre de copyright, puedes clonar el repo y mejorarlo a tu gusto, si te gusto mi trabajo dejame un follow y una star!
-Preferiblemente ejecutarlo con el IDE PyCharm: https://www.jetbrains.com/es-es/pycharm/
-(Ejecutar la clase main)
+Juego de la serpiente escrito en Python, con la libreria de Turtle Graphics.
+Libre de copyright, puedes clonar el repo y mejorarlo a tu gusto.
+(Ejecutarlo con la clase main)
